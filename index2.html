@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+         html{
+             height: 100%;
+             width: auto;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+         #header{
+            border: 1px solid black;
+            color: #182026;
+            background-color: #ccc;
+            width: 100%;
+            display: flex;
+            height:70px;
+            margin-bottom: 2.5vw;
+
+        }
+
+        
+          #header > div{
+            background-color: #f1f1f1;
+            width: 100px;
+            height: 40px;
+            margin-top: 7.5px;
+            margin-bottom: 7.5px;
+            text-align: center;
+            line-height: 45px;
+            font-size: 26px;
+        }
+
+        #header > #logo{
+               margin-left: 25px;
+               margin-right: 38px;
+               background-color: red;
+        }
+
+        #header > #access{
+             margin-left: 60vw;
+             margin-right:30px;
+             background-color: rgb(66, 23, 165);
+            
+        }
+        
+        #root{
+            margin: 0;
+            
+            
+
+        }
+
+        #root > #bkg-img{
+            border: 1px solid green;
+            
+
+            
+        }
+
+        #root > #bkg-img > img{
+            display: block;
+            margin: 0 auto;
+            width: auto;
+            height: 200px;
+        }
+
+        #divider{
+            border: 1px solid rgb(121, 90, 207);
+            margin-top: 9px;
+            width: 100%;
+            text-align: center;
+            padding: 12px;
+        }
+
+        #search-bar{
+            margin-top: 15px;
+            border: 2px solid pink;
+            padding: 12px;
+            margin-left: 0;
+            margin-right: 0;
+            height: 46px;
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 16px;
+
+        }
+
+         #search-bar > #search-input{
+            border: 1px solid yellow;
+            width: 100%;
+            max-width: 50%;
+            margin-top:0;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom:20px;
+          
+            
+            
+        }
+
+         input{
+            width: 100%;
+            height: 28px;
+            padding: 8px;
+            margin-bottom: 23px;
+        }
+
+        /*
+        #search-bar> #search-input > input[type=search] 
+        {
+         float: right;
+          padding: 6px;
+          border: none;
+          margin-top: 8px;
+          margin-right: 16px;
+          font-size: 17px;
+}
+*/
+    </style>
+    <main>
+        <div id="header">
+            <!--Header-->
+            <div id="logo">logo</div>
+            <div id="access">button</div>
+            <div id="langs">button</div>
+        </div>
+
+        <div id="root">
+            <!--Root-->
+
+            <div id="bkg-img">
+                <!--image-->
+                <img src="exp.jpg" alt="images" />
+            </div>
+
+            <div id="divider">
+
+                <div id="caption">Caption: topic header :Find Access and share data</div>
+            </div>
+
+            <div id="search-bar">
+
+                <div id="search-input">
+                    <input placeholder="Search by keywords" type="text" >
+                </div>
+
+            </div>
+
+            <div id="lines">
+                <hr class="line">
+                Browseby
+                <hr class="line">
+            </div>
+        </div>
+
+        <div class="wrapper1">
+            <div>
+                <button>
+                    <span>
+                        Databases
+                        <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z">
+            
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+
+
+
+            <div>
+                <button>
+                    <span>
+                        Indicators By Subject
+                        <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z">
+            
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+
+
+            <div>
+                <button>
+                    <span>
+                        Indicators by Breakdown
+                        <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z">
+            
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+
+            <div>
+                <button>
+                    <span>
+                        Frequency
+                        <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z">
+            
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+
+            <div>
+                <button>
+                    <span>
+                        Reference Area
+                        <svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z">
+            
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <div id="wrapper2">
+                    
+                        <div>
+                            <button>
+                                <div>
+                                    <span>Population</span>
+                                </div>
+                            </button>
+                        </div>
+                    
+                    
+                        <div>
+                            <button>
+                                <div>
+                                    <span>Labor Force</span>
+                                </div>
+                            </button>
+                    
+                        </div>
+                    
+                        <div>
+                            <button>
+                                <div>
+                                    <span>Employment</span>
+                                </div>
+                            </button>
+                        </div>
+                    
+                        <div>
+                            <button>
+                                <div>
+                                    <span>Informal Sector & Informal Employment</span>
+                                </div>
+                            </button>
+                        </div>
+                    
+                        <div>
+                            <button>
+                                <div>
+                                    <span>Public Sector Employment</span>
+                                </div>
+                            </button>
+                        </div>
+                    
+                        <div>
+                            <button>
+                                <div>
+                                    <span>Employment</span>
+                                </div>
+                            </button>
+                        </div>
+                    
+                        <div>
+                            <button>
+                                <div>
+                                    <span>Working Poverty</span>
+                                </div>
+                            </button>
+                        </div>
+                    
+                        <div>
+                            <button>
+                                <div>
+                                    <span>Unemployment</span>
+                                </div>
+                            </button>
+                        </div>
+                    
+                        <div>
+                            <button>
+                                <div>
+                                    <span>Time-related Underemployment</span>
+                                </div>
+                            </button>
+                        </div>
+                    
+                        <div>
+                            <button>
+                                <div>
+                                    <span>Other Measures of Labor underutilisation</span>
+                                </div>
+                            </button>
+                        </div>
+                    
+                    
+                    
+                        <div>
+                            <button>
+                                <div>
+                                    <span>School-to-work transition</span>
+                                </div>
+                            </button>
+                        </div>
+                    
+                        <div>
+                            <button>
+                                <div>
+                                    <span>Hours of work</span>
+                                </div>
+                            </button>
+                        </div>
+                    
+                        <div>
+                            <button>
+                                <div>
+                                    <span>Earnings</span>
+                                </div>
+                            </button>
+                        </div>
+                    
+                        <div>
+                            <button>
+                                <div>
+                                    <span>Labour income</span>
+                                </div>
+                            </button>
+                        </div>
+                    
+                        <div>
+                            <button>
+                                <div>
+                                    <span>Labor cost</span>
+                                </div>
+                            </button>
+                        </div>
+                    
+                        <div>
+                            <button>
+                                <div>
+                                    <span>Labour productivity</span>
+                                </div>
+                            </button>
+                        </div>
+                    
+                        <div>
+                            <button>
+                                <div>
+                                    <span>Social Protection</span>
+                                </div>
+                            </button>
+                        </div>
+                    
+                        <div>
+                            <button>
+                                <div>
+                                    <span>Occupational Injuries</span>
+                                </div>
+                            </button>
+                        </div>
+                    
+                        <div>
+                            <button>
+                                <div>
+                                    <span>Labour Inspection</span>
+                                </div>
+                            </button>
+                        </div>
+                    
+                        <div>
+                            <button>
+                                <div>
+                                    <span>Trade union membership</span>
+                                </div>
+                            </button>
+                        </div>
+                    
+                    
+                        <div>
+                            <button>
+                                <div>
+                                    <span>Collective Bargaining</span>
+                                </div>
+                            </button>
+                        </div>
+                    
+                        <div>
+                            <button>
+                                <div>
+                                    <span>Strikes and Lockouts</span>
+                                </div>
+                            </button>
+                        </div>
+                    
+                        <div>
+                            <button>
+                                <div>
+                                    <span>Unpaid Work</span>
+                                </div>
+                            </button>
+                        </div>
+                    
+                        <div>
+                            <button>
+                                <div>
+                                    <span>International migrant stock</span>
+                                </div>
+                            </button>
+                        </div>
+                    
+                        <div>
+                            <button>
+                                <div>
+                                    <span>International migrant flow</span>
+                                </div>
+                            </button>
+                        </div>
+                    
+                        <div>
+                            <button>
+                                <div>
+                                    <span>Nationals Abroad</span>
+                                </div>
+                            </button>
+                        </div>
+                    
+                        <div>
+                            <button>
+                                <div>
+                                    <span>Child Labor</span>
+                                </div>
+                            </button>
+                        </div>
+                    
+                    
+                        <div>
+                            <button>
+                                <div>
+                                    <span>Consumer Price</span>
+                                </div>
+                            </button>
+                        </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    </div>
+
+    </main>
+
+    <div>
+        <h2>Footer</h2>
+    </div>
+</body>
+</html>
